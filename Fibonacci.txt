@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main(){
+    int n,fibb1=0,fibb2=1,temp=0;
+    printf("Enter number of terms : ");
+    scanf("%d",&n);
+    printf(" %d %d",fibb1,fibb2);
+    for(int i=0;i<n;i++){
+        temp=fibb1+fibb2;
+        fibb1=fibb2;
+        fibb2=temp;
+        printf(" %d ",temp);
+    }
+}
