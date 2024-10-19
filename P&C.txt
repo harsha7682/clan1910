@@ -1,0 +1,21 @@
+#include<stdio.h>
+int factorial(int a)
+{
+    int result=1;
+    if(a==0)
+    {
+        return result;
+    }
+    return a*factorial(a-1);
+}
+void main()
+{
+    int n,r,b,k;
+    printf("Enter no.of ways:");
+    scanf("%d",&n);
+    printf("Enter no.of ways:");
+    scanf("%d",&r);
+    b=factorial(n);
+    k=factorial(n-r);
+    printf("The no.of ways are %d",b/k);
+}
